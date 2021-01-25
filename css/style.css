@@ -1,0 +1,40 @@
+body {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+
+body header {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+}
+
+body header nav ul {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin: 0px;
+}
+
+body header nav ul li {
+  margin: 15px;
+  text-decoration: none;
+}
+
+body header .social-media {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+      flex-direction: row;
+}
+
+body header .social-media .social-media-icon {
+  margin: 15px;
+}
+/*# sourceMappingURL=style.css.map */
