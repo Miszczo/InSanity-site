@@ -1,40 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap");
+/* variables */
 body {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
       flex-direction: column;
+  background-image: url("https://i.postimg.cc/2S7NMMqH/pexels-scott-webb-2824173.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
 
-body header {
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+.button {
+  padding: 10px 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: "Lato", sans-serif;
+  text-transform: uppercase;
+}
+
+.post {
+  display: none;
+}
+
+.post.active {
+  display: block;
+}
+
+header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
   -ms-flex-pack: center;
       justify-content: center;
+  margin-top: 60px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid;
 }
 
-body header nav ul {
+.navigation {
+  margin-right: 100px;
+}
+
+.navigation__list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin: 0px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  list-style: none;
+  height: 30px;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+  font-size: 20px;
 }
 
-body header nav ul li {
-  margin: 15px;
-  text-decoration: none;
+.navigation__item {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  margin: 0 50px 0 40px;
 }
 
-body header .social-media {
+.social-media {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
+  margin-left: 100px;
 }
 
-body header .social-media .social-media-icon {
-  margin: 15px;
+.social-media__icon {
+  margin: 0 20px 0 40px;
+  font-size: 30px;
+}
+
+.welcome-page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-top: 30px;
+}
+
+.welcome-page__image {
+  max-width: 100%;
+  width: 1000px;
+  height: auto;
+}
+
+.welcome-page__button {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=style.css.map */

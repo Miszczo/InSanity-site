@@ -1,0 +1,39 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
+/* variables */
+
+$font-titles: 'Open Sans', sans-serif; 
+$font-text: 'Lato', sans-serif;
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-image: url("https://i.postimg.cc/2S7NMMqH/pexels-scott-webb-2824173.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited{
+  color: black;
+}
+
+.button {
+  padding: 10px 30px;
+  border: 2px solid black;
+  border-radius: 10px;
+  font-family: $font-text;
+  text-transform: uppercase;
+}
+
+.post {
+  display: none;
+  &.active {
+    display: block;
+  }
+}
+ 

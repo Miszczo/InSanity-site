@@ -1,28 +1,5 @@
-body {
-  display: flex;
-  flex-direction: column;
-  header {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    nav {
-      ul {
-        display: flex;
-        flex-direction: row;
-        margin: 0px;
-        li {
-          margin: 15px;
-          text-decoration: none;
-        }
-      }
-    }
-    .social-media {
-      display: flex;
-      flex-direction: row;
-      .social-media-icon {
-        margin: 15px;
-      }
-    }
-  }
-}
- 
+@import 'partials/global';
+@import 'partials/header';
+@import 'partials/main';
+@import 'partials/footer';
+@import 'partials/background'

@@ -4,11 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>In Sanity band</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel = 'stylesheet' href = 'css/normalize.css'> 
+  <link rel = "stylesheet" href = "css/normalize.css">
   <script src="https://kit.fontawesome.com/ecbfd4882f.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  
   <header>
     <nav class="navigation">
       <ul class="navigation__list">
@@ -16,30 +19,48 @@
         <li class="navigation__item"><a href="#">o nas</a></li>
         <li class="navigation__item"><a href="#">media</a></li>
         <li class="navigation__item"><a href="#">kontakt</a></li>
-      </ul> 
-    </nav>    
+      </ul>
+    </nav>
     <div class="social-media">
-      <div class="social-media__icon"><i class="fab fa-facebook-f"></i>
+      <div class="social-media__icon">
+        <a href="">
+          <i class="fab fa-facebook-f"></i>
+        </a> 
       </div>
-      <div class="social-media__icon"><i class="fab fa-instagram"></i>
+      <div class="social-media__icon">
+        <a href="">
+          <i class="fab fa-instagram"></i>
+        </a> 
       </div>
-      <div class="social-media__icon"><i class="fab fa-youtube"></i>
+      <div class="social-media__icon">
+        <a href="">
+          <i class="fab fa-youtube"></i>
+        </a> 
       </div>
     </div>
   </header>
 
   <main>
     <div class="welcome-page">
-      <img src="images/In sanity logo.jpg" alt="insanity">
-    </div>  
+      <img class="welcome-page__image" src="https://i.postimg.cc/QC3rvmdk/In-sanity-logo-tiny-no-bg3.png" alt="insanity">
+      <a href="#" class="welcome-page__button button">sprawdź</a>
+      
+    </div>
     <div class="pages">
-      <div class="home"></div>
-      <div class="o nas"></div>
-      <div class="media"></div>
-      <div class="kontakt"></div>
+      <div class="pages__home post">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi architecto nulla, reprehenderit fuga cumque amet eius excepturi ducimus reiciendis repellat nisi sequi suscipit pariatur aut minus quibusdam, eum vero?</p>
+      </div>
+      <div class="pages__about post">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi architecto nulla, reprehenderit fuga cumque amet eius excepturi ducimus reiciendis repellat nisi sequi suscipit pariatur aut minus quibusdam, eum vero?</p>
+      </div>
+      <div class="pages__media post">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi architecto nulla, reprehenderit fuga cumque amet eius excepturi ducimus reiciendis repellat nisi sequi suscipit pariatur aut minus quibusdam, eum vero?</p>
+      </div>
+      <div class="pages__contact post"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi architecto nulla, reprehenderit fuga cumque amet eius excepturi ducimus reiciendis repellat nisi sequi suscipit pariatur aut minus quibusdam, eum vero?</p></div>
     </div>
   </main>
 
   <footer></footer>
+
 </body>
 </html>
