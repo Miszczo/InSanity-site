@@ -26,7 +26,8 @@ a:visited {
 }
 
 .post.active {
-  display: block;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header {
@@ -118,7 +119,5 @@ body {
 .center-intro {
   -ms-flex-pack: center;
       justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,4 @@
-import {initiator} from './components/initiator.js';
+import {switchOn} from './components/Switch.js';
 
-initiator();
+switchOn;
+
