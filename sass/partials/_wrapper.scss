@@ -1,0 +1,10 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.center-intro {
+  justify-content: center;
+  align-items: center;
+}
