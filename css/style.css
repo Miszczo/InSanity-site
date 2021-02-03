@@ -30,6 +30,13 @@ a:visited {
   display: flex;
 }
 
+.welcome-page {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
 header {
   display: -ms-flexbox;
   display: flex;
@@ -116,8 +123,13 @@ body {
   height: 100vh;
 }
 
-.center-intro {
+.welcome-page {
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 100vh;
 }
 /*# sourceMappingURL=style.css.map */

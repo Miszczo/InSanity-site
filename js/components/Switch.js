@@ -8,8 +8,9 @@ export class Switch{
   addClass(){
     const header = document.querySelector('header');
     const button = document.getElementById('btn');
+
     console.log(button);
-    button.addEventListener('click', function(){
+    button.addEventListener('click', ()=>{
       header.classList.add('active');
     })
     console.log("hehe");
