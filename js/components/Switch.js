@@ -13,9 +13,10 @@ export class Switch{
     for(const btn of buttons){
       btn.addEventListener('click', ()=>{
         header.classList.add('active');
+        console.log('im working!');
       })
     }
-    
+
     console.log("jestem");
   }
 }
