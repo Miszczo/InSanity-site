@@ -30,13 +30,6 @@ a:visited {
   display: flex;
 }
 
-.welcome-page {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
-}
-
 header {
   display: -ms-flexbox;
   display: flex;

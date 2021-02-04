@@ -7,13 +7,16 @@ export class Switch{
 
   addClass(){
     const header = document.querySelector('header');
-    const button = document.getElementById('btn');
+    const buttons = document.querySelectorAll('.button');
 
-    console.log(button);
-    button.addEventListener('click', ()=>{
-      header.classList.add('active');
-    })
-    console.log("hehe");
+    console.log(buttons);
+    for(const btn of buttons){
+      btn.addEventListener('click', ()=>{
+        header.classList.add('active');
+      })
+    }
+    
+    console.log("jestem");
   }
 }
 
