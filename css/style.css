@@ -40,8 +40,9 @@ header {
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: center;
+      justify-content: center;
+  height: auto;
   margin-top: 60px;
   padding-bottom: 10px;
   border-bottom: 1px solid;
@@ -49,7 +50,12 @@ header {
 
 /* logo */
 .band-logo {
-  width: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .band-logo__image {
@@ -60,7 +66,11 @@ header {
 
 /* nav menu */
 .navigation {
-  width: 100%;
+  -ms-flex: 1;
+      flex: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .navigation__list {
@@ -70,6 +80,8 @@ header {
       flex-direction: row;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
   list-style: none;
   height: 30px;
   margin: 0 0 0 0;
@@ -88,8 +100,14 @@ header {
 .social-media {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
   -ms-flex-direction: row;
       flex-direction: row;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex: 1;
+      flex: 1;
 }
 
 .social-media__icon {
