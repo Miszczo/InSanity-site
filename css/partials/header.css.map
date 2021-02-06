@@ -1,9 +1,0 @@
-{
-	"version": 3,
-	"file": "header.css",
-	"sources": [
-		"../../sass/partials/header.scss"
-	],
-	"names": [],
-	"mappings": ""
-}

@@ -1,3 +1,3 @@
-import {switchOn} from './components/Switch.js';
+import {EnterInsidePage} from './components/EnterInsidePage.js';
 
-switchOn;
+console.log(EnterInsidePage);

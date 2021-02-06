@@ -21,6 +21,7 @@ a:visited {
   text-transform: uppercase;
 }
 
+/* hide/show elements*/
 .post {
   display: none;
 }
@@ -30,20 +31,36 @@ a:visited {
   display: flex;
 }
 
+.hide {
+  display: none;
+}
+
 header {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: center;
-      justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin-top: 60px;
   padding-bottom: 10px;
   border-bottom: 1px solid;
 }
 
+/* logo */
+.band-logo {
+  width: 100%;
+}
+
+.band-logo__image {
+  max-width: 340px;
+  width: 100%;
+  height: auto;
+}
+
+/* nav menu */
 .navigation {
-  margin-right: 100px;
+  width: 100%;
 }
 
 .navigation__list {
@@ -64,15 +81,15 @@ header {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
-  margin: 0 50px 0 40px;
+  margin: 0 0px 0 0px;
 }
 
+/* social media icons */
 .social-media {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  margin-left: 100px;
 }
 
 .social-media__icon {

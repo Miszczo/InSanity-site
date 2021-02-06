@@ -25,6 +25,7 @@ a:visited{
   font-family: $font-text;
   text-transform: uppercase;
 }
+/* hide/show elements*/ 
 
 .post {
   display: none;
@@ -33,4 +34,7 @@ a:visited{
     display: flex;
   }
 }
- 
+
+.hide {
+  display: none;
+}
