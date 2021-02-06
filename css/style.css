@@ -105,18 +105,10 @@ header {
   font-size: 30px;
 }
 
-.main-wrapper {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column;
+/* warning! display: flex; is added by the class .active in global.scss file */
+.pages__home {
   -ms-flex-pack: center;
       justify-content: center;
-}
-
-.pages {
-  width: 1200px;
-  margin-top: 100px;
 }
 
 body {
