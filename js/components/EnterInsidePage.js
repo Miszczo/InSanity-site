@@ -7,17 +7,15 @@ export class EnterInside{
     const header = document.querySelector('header');
     const homePage = document.querySelector('.pages__home');
     const welcomePage = document.querySelector('.welcome-page');
-    const buttons = document.querySelectorAll('.switch-button-selector');
+    const welcomeButton = document.querySelector('.welcome-page__button');
 
-    console.log(buttons);
-    for(const btn of buttons){
-      btn.addEventListener('click', ()=>{
+    console.log(welcomeButton);
+    welcomeButton.addEventListener('click', ()=> {
         header.classList.add('active');
         homePage.classList.add('active');
         welcomePage.style.display = 'none';
-        console.log('im working!');
+        console.log('Greeetings sire!');
       })
-    }
 
     console.log("im alive!");
   }

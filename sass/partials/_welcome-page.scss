@@ -1,6 +1,17 @@
 .welcome-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 100vh;
+}
+
+.welcome-page__image {
+  max-width: 100%;
+  width: 1000px;
+  height: auto;
+}
+
+.welcome-page__button {
+  margin-top: 30px;
 }

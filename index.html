@@ -7,18 +7,16 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <link rel = "stylesheet" href = "css/normalize.css">
+  <!-- <link rel = "stylesheet" href = "css/normalize.css"> -->
   <script src="https://kit.fontawesome.com/ecbfd4882f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrapper">
-
     <header class="post">
-
+      <div class="header-wrapper">
       <div class="band-logo">
         <img class="band-logo__image" src="https://i.postimg.cc/6Qrk62gd/In-sanity-cover.png" alt="band-logo">
       </div>
-
       <nav class="navigation">
         <ul class="navigation__list">
           <li class="navigation__item switch-button-selector"><a href="#">home</a></li>
@@ -27,7 +25,6 @@
           <li class="navigation__item switch-button-selector"><a href="#">kontakt</a></li>
         </ul>
       </nav>
-
       <div class="social-media">
         <div class="social-media__icon">
           <a href="#" alt="icon">
@@ -45,26 +42,31 @@
           </a> 
         </div>
       </div>
+      </div>     
     </header>
   
     <main>
-      <div class="welcome-page">
-        <img class="welcome-page__image" src="https://i.postimg.cc/QC3rvmdk/In-sanity-logo-tiny-no-bg3.png" alt="insanity">
-        <a href="#" class="welcome-page__button button switch-button-selector">wejdź</a>       
+      <div class="main-wrapper">
+        <div class="welcome-page">
+          <img class="welcome-page__image" src="https://i.postimg.cc/QC3rvmdk/In-sanity-logo-tiny-no-bg3.png" alt="insanity">
+          <a href="#" class="welcome-page__button button">wejdź</a>       
+        </div>
+  
+        <div class="pages">
+          <div class="pages__home pages--config post">
+            <h1>Jesteśmy In Sanity!</h1>
+          </div>
+          <div class="pages__about pages--config post">
+            <h1>Historia zespołu</h1>
+          </div>
+          <div class="pages__media pages--config post">
+            <h1>Galeria</h1>
+          </div>
+          <div class="pages__contact pages--config post"><h1>kontakt</h1>
+          </div>
+        </div>
       </div>
 
-      <div class="pages">
-        <div class="pages__home post">
-          <h1>Jesteśmy In Sanity!</h1>
-        </div>
-        <div class="pages__about post">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi architecto nulla, reprehenderit fuga cumque amet eius excepturi ducimus reiciendis repellat nisi sequi suscipit pariatur aut minus quibusdam, eum vero?</p>
-        </div>
-        <div class="pages__media post">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi architecto nulla, reprehenderit fuga cumque amet eius excepturi ducimus reiciendis repellat nisi sequi suscipit pariatur aut minus quibusdam, eum vero?</p>
-        </div>
-        <div class="pages__contact post"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore eligendi architecto nulla, reprehenderit fuga cumque amet eius excepturi ducimus reiciendis repellat nisi sequi suscipit pariatur aut minus quibusdam, eum vero?</p></div>
-      </div>
     </main>
     <footer></footer>
   </div>
