@@ -1,44 +1,42 @@
 header {
-  border-bottom: 1px solid;
+  // border-bottom: 1px solid;
 }
 
 .header-wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   flex-wrap: wrap;
   height: auto;
-  padding-bottom: 20px;
-  margin-top: 30px;
+  margin: 20px 0 10px 0;
   width: 100%;
 }
 
 /* logo */ 
 .band-logo {
   display: flex;
-  
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 40px;
 }
 
 .band-logo__image {
-  max-width: 400px;
+  max-width: 280px;
   width: 100%;
   height: auto;
 }
 
 /* nav menu */ 
 .navigation {
-  // margin-left: 100px;
-  align-self: center;
-
+  
 }
 
 .navigation__list {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
   align-items: center;
   list-style: none;
   height: 30px;
-  font-size: 20px;
+  font-size: 15px;
   width: 500px;
 }
 
@@ -46,7 +44,7 @@ header {
   text-transform: uppercase;
   font-family: $font-titles;
   font-weight: bold;
-  // margin: 0 20px 0 20px;
+  margin: 0 15px 0 15px;
 }
 
 /* social media icons */ 
@@ -56,11 +54,12 @@ header {
   flex-direction: row;
   justify-content: space-around;
   width: 200px;
+  margin-right: 40px;
 }
 
 .social-media__icon {
   // margin: 0 20px 0 40px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 

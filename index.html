@@ -7,60 +7,63 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel = "stylesheet" href = "css/normalize.css"> -->
+  <link rel = "stylesheet" href = "css/normalize.css">
   <script src="https://kit.fontawesome.com/ecbfd4882f.js" crossorigin="anonymous"></script>
 </head>
 <body>
   <div class="wrapper">
     <header class="post">
       <div class="header-wrapper">
-      <div class="band-logo">
-        <a href="."><img class="band-logo__image" src="https://i.postimg.cc/6Qrk62gd/In-sanity-cover.png" alt="band-logo"></a>    
-      </div>
-      <nav class="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item header-button-selector" id="home"><a href="#">home</a></li>
-          <li class="navigation__item header-button-selector" id="about"><a href="#">o nas</a></li>
-          <li class="navigation__item header-button-selector" id="media"><a href="#">media</a></li>
-          <li class="navigation__item header-button-selector" id="contact"><a href="#">kontakt</a></li>
-        </ul>
-      </nav>
-      <div class="social-media">
-        <div class="social-media__icon">
-          <a href="https://www.facebook.com/insanitypoland" target="_blank" alt="icon">
-            <i class="fab fa-facebook-f"></i>
-          </a> 
+        <div class="band-logo">
+          <a href="."><img class="band-logo__image" src="https://i.postimg.cc/6Qrk62gd/In-sanity-cover.png" alt="band-logo"></a>           
+          <nav class="navigation">
+            <ul class="navigation__list">
+              <li class="navigation__item header-button-selector" id="home"><a href="#">home</a></li>
+              <li class="navigation__item header-button-selector" id="about"><a href="#">o nas</a></li>
+              <li class="navigation__item header-button-selector" id="media"><a href="#">media</a></li>
+              <li class="navigation__item header-button-selector" id="contact"><a href="#">kontakt</a></li>
+            </ul>
+          </nav>
         </div>
-        <div class="social-media__icon">
-          <a href="https://www.instagram.com/insanityband/" target="_blank" alt="icon">
-            <i class="fab fa-instagram"></i>
-          </a> 
+        
+        <div class="social-media">
+          <div class="social-media__icon">
+            <a href="https://www.facebook.com/insanitypoland" target="_blank" alt="icon">
+              <i class="fab fa-facebook-f"></i>
+            </a> 
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.instagram.com/insanityband/" target="_blank" alt="icon">
+              <i class="fab fa-instagram"></i>
+            </a> 
+          </div>
+          <div class="social-media__icon">
+            <a href="https://www.youtube.com/channel/UCzYNv04JGNOi-pJNlfK3dNQ" target="_blank">
+              <i class="fab fa-youtube"></i>
+            </a> 
+          </div>
         </div>
-        <div class="social-media__icon">
-          <a href="https://www.youtube.com/channel/UCzYNv04JGNOi-pJNlfK3dNQ" target="_blank">
-            <i class="fab fa-youtube"></i>
-          </a> 
-        </div>
-      </div>
       </div>     
     </header>
   
     <main>
+      <div class="welcome-page">
+        <img class="welcome-page__image img-responsive" src="https://i.postimg.cc/QC3rvmdk/In-sanity-logo-tiny-no-bg3.png" alt="insanity">
+        <a href="#" class="welcome-page__button button">wejdź</a>       
+      </div>
+
       <div class="main-wrapper">
-        <div class="welcome-page">
-          <img class="welcome-page__image" src="https://i.postimg.cc/QC3rvmdk/In-sanity-logo-tiny-no-bg3.png" alt="insanity">
-          <a href="#" class="welcome-page__button button">wejdź</a>       
-        </div>
-  
         <div class="pages">
           <div class="pages__home pages--config pages-selector post" id="home">
             <h1>Jesteśmy In Sanity!</h1>
+            <img class="home__image img-responsive" src="https://i.postimg.cc/MHxy1k03/In-Sanity0002-min.jpg" alt="band-photo">
           </div>
           <div class="pages__about pages--config pages-selector post" id="about">
             <h1>Historia zespołu</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptates nostrum recusandae sequi aliquam ipsum facere quos vero aperiam earum assumenda explicabo a esse odit cum, nobis exercitationem dolorum minima.</p>
           </div>
           <div class="pages__media pages--config pages-selector post" id="media">
-          <h1>Galeria</h1>
+          <h1>Media</h1>
           </div>
           <div class="pages__contact pages--config pages-selector post" id="contact"><h1>Kontakt</h1>
           </div>
@@ -68,7 +71,27 @@
       </div>
 
     </main>
-    <footer></footer>
+    <footer>
+      <a class="navigation__item header-button-selector" id="home" href="#">home</a>
+      
+      <div class="social-media footer-social-media">
+        <div class="social-media__icon footer-social-media-icon">
+          <a href="https://www.facebook.com/insanitypoland" target="_blank" alt="icon">
+            <i class="fab fa-facebook-f"></i>
+          </a> 
+        </div>
+        <div class="social-media__icon footer-social-media-icon">
+          <a href="https://www.instagram.com/insanityband/" target="_blank" alt="icon">
+            <i class="fab fa-instagram"></i>
+          </a> 
+        </div>
+        <div class="social-media__icon footer-social-media-icon">
+          <a href="https://www.youtube.com/channel/UCzYNv04JGNOi-pJNlfK3dNQ" target="_blank">
+            <i class="fab fa-youtube"></i>
+          </a> 
+        </div>
+      </div>
+    </footer>
   </div>
   
   <script type="module" src="js/app.js"></script>

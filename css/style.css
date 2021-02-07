@@ -2,6 +2,7 @@
 /* variables */
 body {
   height: 100vh;
+  font-family: "Lato", sans-serif;
 }
 
 a {
@@ -17,7 +18,6 @@ a:visited {
   padding: 10px 30px;
   border: 2px solid black;
   border-radius: 10px;
-  font-family: "Lato", sans-serif;
   text-transform: uppercase;
 }
 
@@ -31,20 +31,21 @@ a:visited {
   display: flex;
 }
 
-header {
-  border-bottom: 1px solid;
+/* img settings */
+.img-responsive {
+  width: 100%;
+  height: auto;
 }
 
 .header-wrapper {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   height: auto;
-  padding-bottom: 20px;
-  margin-top: 30px;
+  margin: 20px 0 10px 0;
   width: 100%;
 }
 
@@ -52,33 +53,30 @@ header {
 .band-logo {
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-align: center;
+      align-items: center;
+  margin-left: 40px;
 }
 
 .band-logo__image {
-  max-width: 400px;
+  max-width: 280px;
   width: 100%;
   height: auto;
 }
 
 /* nav menu */
-.navigation {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .navigation__list {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: row;
       flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
   -ms-flex-align: center;
       align-items: center;
   list-style: none;
   height: 30px;
-  font-size: 20px;
+  font-size: 15px;
   width: 500px;
 }
 
@@ -86,6 +84,7 @@ header {
   text-transform: uppercase;
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
+  margin: 0 15px 0 15px;
 }
 
 /* social media icons */
@@ -99,16 +98,51 @@ header {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   width: 200px;
+  margin-right: 40px;
 }
 
 .social-media__icon {
-  font-size: 30px;
+  font-size: 25px;
+}
+
+main {
+  height: 100vh;
+}
+
+.main-wrapper {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+.pages {
+  margin-top: 150px;
+  max-width: 1000px;
+  justify-self: center;
 }
 
 /* warning! display: flex; is added by the class .active in global.scss file */
 .pages--config {
+  -ms-flex-direction: column;
+      flex-direction: column;
   -ms-flex-pack: center;
       justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+}
+
+/* home */
+.home__image {
+  width: 500px;
+}
+
+footer {
+  background-color: #020a20;
 }
 
 body {
@@ -139,9 +173,7 @@ body {
 }
 
 .welcome-page__image {
-  max-width: 100%;
   width: 1000px;
-  height: auto;
 }
 
 .welcome-page__button {

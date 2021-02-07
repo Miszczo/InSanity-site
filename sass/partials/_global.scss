@@ -1,12 +1,13 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
-/* variables */
 
+/* variables */
 $font-titles: 'Open Sans', sans-serif;
 $font-text: 'Lato', sans-serif;
 
 body {
   height: 100vh;
+  font-family: $font-text;
 }
 
 a {
@@ -22,7 +23,6 @@ a:visited{
   padding: 10px 30px;
   border: 2px solid black;
   border-radius: 10px;
-  font-family: $font-text;
   text-transform: uppercase;
 }
 /* hide/show elements*/ 
@@ -35,3 +35,8 @@ a:visited{
   }
 }
 
+/* img settings */ 
+.img-responsive {
+  width: 100%;
+  height: auto;
+}

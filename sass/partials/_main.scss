@@ -1,15 +1,28 @@
 main {
-  
+  height: 100vh;
 }
 
 .main-wrapper {
- 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .pages {
+  margin-top: 150px;
+  max-width: 1000px;
+  justify-self: center;
 }  
 
 /* warning! display: flex; is added by the class .active in global.scss file */ 
 .pages--config {
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
+
+/* home */
+.home__image {
+  width: 500px;
+} 
