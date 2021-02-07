@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
 
-
-import {switchPages} from './components/Switcher.js';
+import {enterInsidePage} from './components/EnterInside.js';
+import {switchPage} from './components/Switch.js';
 

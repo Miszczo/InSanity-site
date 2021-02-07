@@ -6,12 +6,13 @@ export class Switch {
   switchPage(){
     const headerButtonSelector = document.querySelectorAll('.header-button-selector');
     const allPages = document.querySelectorAll('.pages-selector')
-    console.log("pages:", allPages);
+    const activeElement = document.querySelector('.active');
+    console.log("active:", activeElement);
 
     for(const singleButton of headerButtonSelector) {
       singleButton.addEventListener('click', ()=> {
         for(const singlePage of allPages){
-          if(singleButton.id == singlePage.id && !singlePage.classList.contains('active')) {
+          if(singleButton.id == singlePage.id ) {
             singlePage.classList.add('active');
           } else {
             singlePage.classList.remove('active');
