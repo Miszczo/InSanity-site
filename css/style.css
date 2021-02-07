@@ -106,7 +106,7 @@ header {
 }
 
 /* warning! display: flex; is added by the class .active in global.scss file */
-.pages__home {
+.pages--config {
   -ms-flex-pack: center;
       justify-content: center;
 }
