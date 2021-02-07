@@ -9,16 +9,16 @@ export class EnterInside{
     const welcomePage = document.querySelector('.welcome-page');
     const welcomeButton = document.querySelector('.welcome-page__button');
 
-    console.log(welcomeButton);
+    // console.log(welcomeButton);
     welcomeButton.addEventListener('click', ()=> {
         header.classList.add('active');
         homePage.classList.add('active');
         welcomePage.style.display = 'none';
-        console.log('Greeetings sire!');
+        // console.log('Greeetings sire!');
       })
 
-    console.log("im alive!");
+    // console.log("im alive!");
   }
 }
 
-export const EnterInsidePage = new EnterInside();
+export const enterInsidePage = new EnterInside();

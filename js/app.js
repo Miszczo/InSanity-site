@@ -1,3 +1,5 @@
-import {EnterInsidePage} from './components/EnterInsidePage.js';
+/* eslint-disable no-unused-vars */
 
-console.log(EnterInsidePage);
+import {enterInsidePage} from './components/EnterInside.js';
+import {switchPage} from './components/Switch.js';
+
