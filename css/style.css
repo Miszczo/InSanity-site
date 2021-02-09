@@ -3,6 +3,10 @@
 body {
   height: 100vh;
   font-family: "Lato", sans-serif;
+  background-image: url("https://i.postimg.cc/q7QcZ22h/close-up-white-marble-textured-background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: inset 0 0 0 2000px rgba(235, 232, 232, 0.2);
 }
 
 a {
@@ -107,6 +111,8 @@ a:visited {
 
 main {
   height: 100vh;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .main-wrapper {
@@ -118,11 +124,15 @@ main {
       justify-content: center;
   -ms-flex-align: center;
       align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
 }
 
 .pages {
-  margin-top: 150px;
   max-width: 1000px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   justify-self: center;
 }
 
@@ -141,15 +151,14 @@ main {
   width: 500px;
 }
 
-footer {
-  background-color: #020a20;
-}
-
-body {
-  background-image: url("https://i.postimg.cc/q7QcZ22h/close-up-white-marble-textured-background.jpg");
+.background-image {
+  background-image: url("https://i.postimg.cc/qqW5Y29h/In-sanity-logo-tiny2-png.png");
+  width: 100%;
+  height: 400px;
   background-repeat: no-repeat;
   background-size: cover;
-  box-shadow: inset 0 0 0 2000px rgba(235, 232, 232, 0.2);
+  box-shadow: inset 0 0 0 2000px rgba(255, 255, 255, 0.2);
+  z-index: 2;
 }
 
 .wrapper {
