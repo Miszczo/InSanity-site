@@ -109,6 +109,10 @@ a:visited {
   font-size: 25px;
 }
 
+main {
+  height: 100%;
+}
+
 .main-wrapper {
   display: -ms-flexbox;
   display: flex;
