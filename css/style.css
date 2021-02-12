@@ -89,8 +89,8 @@ header {
 .navigation__list {
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
   -ms-flex-align: center;
       align-items: center;
   list-style: none;
@@ -98,6 +98,10 @@ header {
   font-size: 15px;
   width: 500px;
   margin: 0;
+  border-bottom: 2px #BA0000 solid;
+  border-bottom-left-radius: 100px 1px;
+  border-bottom-right-radius: 100px 1px;
+  padding: 0;
 }
 
 .navigation__item {
@@ -112,12 +116,26 @@ main {
 }
 
 .main-wrapper {
-  height: calc(100vh - 170px);
-  background-image: url("https://i.postimg.cc/qqW5Y29h/In-sanity-logo-tiny2-png.png");
-  background-repeat: no-repeat;
-  background-size: auto;
   -ms-flex-pack: center;
       justify-content: center;
+  height: calc(100vh - 170px);
+  position: relative;
+}
+
+.main-wrapper::after {
+  content: "";
+  background-image: url("https://i.postimg.cc/qqW5Y29h/In-sanity-logo-tiny2-png.png");
+  background-size: 1010px auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0.5;
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
 }
 
 .pages--config {
@@ -126,6 +144,7 @@ main {
   -ms-flex-align: center;
       align-items: center;
   width: 800px;
+  margin-top: 40px;
 }
 
 footer {
@@ -171,7 +190,9 @@ footer {
 }
 
 .welcome-page__image {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
 }
 
 .welcome-page__button {

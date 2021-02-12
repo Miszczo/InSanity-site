@@ -33,13 +33,17 @@ header {
 
 .navigation__list {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
   list-style: none;
   height: 30px;
   font-size: 15px;
   width: 500px;
   margin: 0;
+  border-bottom: 2px #BA0000 solid;
+  border-bottom-left-radius: 100px 1px;
+  border-bottom-right-radius: 100px 1px;
+  padding: 0;
 }
 
 .navigation__item {

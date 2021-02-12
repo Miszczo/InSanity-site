@@ -7,7 +7,9 @@
 }
 
 .welcome-page__image {
-  width: 1000px;
+  max-width: 1000px;
+  width: 100%;
+  height: auto;
 }
 
 .welcome-page__button {
