@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;700&display=swap');
 
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* variables */
 $font-titles: 'Open Sans', sans-serif;
 $font-text: 'Lato', sans-serif;

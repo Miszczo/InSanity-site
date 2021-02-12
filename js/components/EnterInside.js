@@ -8,11 +8,15 @@ export class EnterInside{
     const homePage = document.querySelector('.pages__home');
     const welcomePage = document.querySelector('.welcome-page');
     const welcomeButton = document.querySelector('.welcome-page__button');
+    const mainWrapper = document.querySelector('.main-wrapper');
+    const footer = document.querySelector('footer');
 
     // console.log(welcomeButton);
     welcomeButton.addEventListener('click', ()=> {
         header.classList.add('active');
         homePage.classList.add('active');
+        mainWrapper.classList.add('active');
+        footer.classList.add('active');
         welcomePage.style.display = 'none';
         // console.log('Greeetings sire!');
       })
