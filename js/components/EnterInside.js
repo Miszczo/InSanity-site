@@ -5,7 +5,7 @@ export class EnterInside{
 
   addClass(){
     const header = document.querySelector('header');
-    const homePage = document.querySelector('.pages__home');
+    const homePage = document.querySelector('.main-wrapper__home');
     const welcomePage = document.querySelector('.welcome-page');
     const welcomeButton = document.querySelector('.welcome-page__button');
     const mainWrapper = document.querySelector('.main-wrapper');
