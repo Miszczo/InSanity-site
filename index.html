@@ -20,7 +20,7 @@
         <nav class="navigation">
           <ul class="navigation__list">
             <li class="navigation__item header-button-selector" id="home"><a href="#">home</a></li>
-            <li class="navigation__item header-button-selector" id="about"><a href="#">o nas</a></li>
+            <!-- <li class="navigation__item header-button-selector" id="about"><a href="#">o nas</a></li> -->
             <li class="navigation__item header-button-selector" id="media"><a href="#">media</a></li>
             <li class="navigation__item header-button-selector" id="contact"><a href="#">kontakt</a></li>
           </ul>
@@ -33,23 +33,26 @@
         <img class="welcome-page__image img-responsive" src="https://i.postimg.cc/QC3rvmdk/In-sanity-logo-tiny-no-bg3.png" alt="insanity">
         <a href="#" class="welcome-page__button button">wejdź</a>       
       </div>
+      <div class="loading-page post">
+        <div class="loading-page__loading-square post">
 
+        </div>
+      </div>
       <div class="main-wrapper post">
         <div class="main-wrapper__home pages--config pages-selector post" id="home">
           <h1>Jesteśmy In Sanity!</h1>
           <div class="content-wrapper">
-            <div class="home__band-description home-div">
-              <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A necessitatibus, impedit rerum obcaecati fugiat aspernatur perspiciatis aperiam dolores recusandae officiis ullam dolor dolorem vero quaerat id saepe labore corrupti quidem.</p>
-            </div>
-          <div class="home__images home-div"></div>
+          <div class="home__images home-div">
+            <div id="player"></div>
+          </div>
           </div>          
         </div>
-        <div class="main-wrapper__about pages--config pages-selector post" id="about">
+        <!-- <div class="main-wrapper__about pages--config pages-selector post" id="about">
           <h1>Historia zespołu</h1>
           <br>
           <br>
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, voluptates nostrum recusandae sequi aliquam ipsum facere quos vero aperiam earum assumenda explicabo a esse odit cum, nobis exercitationem dolorum minima.</p>
-        </div>
+        </div> -->
         <div class="main-wrapper__media pages--config pages-selector post" id="media">
           <h1>Media</h1>
           <br>
@@ -82,7 +85,46 @@
     </div>     
     </footer>
   </div>
-  
+  <!-- youtube iframe API -->
+  <script>
+    // This code loads the IFrame Player API code asynchronously.
+    const tag = document.createElement('script');
+
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // This function creates an <iframe> (and YouTube player)
+    //    after the API code downloads.
+    let player;
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('player', {
+        height: '100%',
+        width: '100%',
+        videoId: 'j3Bc9lpDwuE?',
+        playerVars: { 'autoplay': 1, 'controls': 1, 'showinfo': 0, },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+    function onPlayerReady() {
+      const welcomeButton = document.querySelector('.welcome-page__button');
+      welcomeButton.addEventListener('click', () => {
+        console.log('click');
+        player.playVideo();
+      });
+      // e.target.playVideo();
+    }
+
+    let done = false;
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING && !done) {
+        done = true;
+      }
+    }
+  </script>
   <script type="module" src="js/app.js"></script>
 </body>
 </html>

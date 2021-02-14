@@ -21,6 +21,19 @@ main {
   position: absolute;
   z-index: -1;   
 }
+// loading page
+.loading-page {
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.loading-page__loading-square {
+  height: 200px;
+  width: 200px;
+  border: 1px solid black;
+  background-color: pink;
+}
 
 .pages--config {
   flex-direction: column;
@@ -30,7 +43,7 @@ main {
   width: 100%;
   margin-top: 40px;
   padding: 30px;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
 .content-wrapper {
@@ -43,6 +56,11 @@ main {
 .home-div {
   height: 100%;
   width: 100%;
-  border: 1px solid black;
+  // border: 1px solid black;
 }
 
+iframe {
+  max-width: 1000px;
+  width: 100%;
+  height: 100%; 
+}
