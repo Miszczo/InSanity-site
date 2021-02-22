@@ -2,4 +2,5 @@
 
 import {enterInsidePage} from './components/EnterInside.js';
 import {switchPage} from './components/Switch.js';
+import {SquareLoaderOn} from './components/LoadingSquare.js';
 

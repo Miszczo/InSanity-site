@@ -9,6 +9,7 @@
 $font-titles: 'Open Sans', sans-serif;
 $font-text: 'Lato', sans-serif;
 
+
 body {
   height: 100vh;
   font-family: $font-text;
@@ -16,6 +17,9 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   box-shadow: inset 0 0 0 2000px rgba(235, 232, 232, 0.2);
+  h1 {
+    font-family: $font-titles;
+  }  
 }
 
 a {

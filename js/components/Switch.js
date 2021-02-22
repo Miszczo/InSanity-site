@@ -1,4 +1,4 @@
-export class Switch {
+class Switch {
   constructor(){
     this.switchPage();
   }

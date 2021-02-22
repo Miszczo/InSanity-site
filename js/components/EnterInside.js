@@ -6,8 +6,9 @@ const mainWrapper = document.querySelector('.main-wrapper');
 const footer = document.querySelector('footer');
 const loadingPage = document.querySelector('.loading-page');
 const square = document.querySelector('.loading-page__loading-square')
+const loadingProgress = document.querySelector('.loading-progress');
 
-export class EnterInside{
+class EnterInside {
   constructor(){
     this.loadingPage();
   }
@@ -21,14 +22,14 @@ export class EnterInside{
     });
 
     const addClass = () => {  
-      console.log("pting");
+      console.log("im working");
       header.classList.add('active');
       homePage.classList.add('active');
       mainWrapper.classList.add('active');
       footer.classList.add('active');
       loadingPage.classList.remove('active');
       square.classList.remove('active')
-    }
+    };
   }
   
 }
