@@ -37,7 +37,7 @@ main {
   flex-wrap: wrap;
   height: 200px;
   width: 200px;
-  border: 1px solid black;
+  // border: 1px solid black;
   font-weight: bolder;
   font-size: 20px;
   position: relative;
@@ -60,7 +60,7 @@ main {
 
 .loading-progress-background {
   width: 200px;
-  background-color: red;
+  background-color: #BB0001;
   position: absolute;
   bottom: -1px;
 }

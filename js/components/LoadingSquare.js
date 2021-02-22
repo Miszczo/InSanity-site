@@ -14,8 +14,8 @@ class LoadingSquare {
         time++;
         height -= 2; 
         square.innerHTML = `${time}%`
-        console.log(time);
-        progressBackground.style.height = height + 'px';
+        // console.log(time);
+        progressBackground.style.height = `${height}px`;
         if (time >= 100) {
             clearInterval(counter);
         }
