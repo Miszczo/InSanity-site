@@ -25,4 +25,4 @@ class LoadingSquare {
   
   }
 }
-export const SquareLoaderOn = new LoadingSquare();
+export const squareLoaderOn = new LoadingSquare();
