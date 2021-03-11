@@ -12,17 +12,17 @@ class ToggleOnPages {
  
   loadingPage(){
     welcomeButton.addEventListener('click', () => {
-      loadingPage.classList.toggle('active');
-      square.classList.toggle('active');
+      loadingPage.classList.toggle('post-active');
+      square.classList.toggle('post-active');
       welcomePage.style.display = 'none';
-      setTimeout(showContent, 300);
+      setTimeout(showContent, 3000);
     });
     const showContent = () => {  
       for (const page of addActiveClassToPages) {
-        page.classList.toggle('active');
+        page.classList.toggle('post-active');
       }
-      loadingPage.classList.remove('active');
-      square.classList.remove('active')
+      loadingPage.classList.remove('post-active');
+      square.classList.remove('post-active')
     };
   }
   

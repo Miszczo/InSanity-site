@@ -29,19 +29,27 @@ a {
 a:visited{
   color: black;
 }
+body a:hover{
+  color: #BB0001;
+  text-decoration: none;
+}
 
 .button {
   padding: 10px 30px;
   border: 2px solid black;
   border-radius: 10px;
   text-transform: uppercase;
-}
+  &:hover {
+    border: 2px solid#BB0001;
+  }
+} 
+
 /* hide/show elements*/ 
 
 .post {
   display: none;
 
-  &.active {
+  &.post-active {
     display: flex;
   }
 }
