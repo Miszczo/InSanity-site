@@ -54,5 +54,10 @@ header {
 }
 
 
+@media (max-width: 760px) {
 
+  .navigation {
+    display: none;
+  }
+ }
 
