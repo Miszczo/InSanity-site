@@ -239,6 +239,13 @@ main {
   height: 100%;
 }
 
+@media (max-width: 760px) {
+  .home-div {
+    height: 100%;
+    width: 100%;
+  }
+}
+
 footer {
   height: 50px;
   -ms-flex-pack: end;
@@ -320,7 +327,7 @@ footer {
   width: auto;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 760px) {
   .carousel-inner .carousel-caption p {
     padding: 0 20px 0 20px;
     font-size: 14px;
