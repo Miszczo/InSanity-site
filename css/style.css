@@ -44,12 +44,12 @@ body a:hover {
 
 /* hide/show elements*/
 .post {
-  display: none;
+  display: none !important;
 }
 
 .post.post-active {
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-flexbox !important;
+  display: flex !important;
 }
 
 /* img settings */
@@ -293,5 +293,31 @@ footer {
 .carousel-inner .carousel-caption p {
   padding: 0 20px 0 20px;
   font-size: 18px;
+}
+
+.carousel-item {
+  max-height: 580px;
+  height: 100%;
+  max-width: 1000px !important;
+  width: auto;
+}
+
+.carousel-item img {
+  max-height: 580px;
+  height: 100%;
+  max-width: 1000px !important;
+  width: auto;
+}
+
+.carousel-indicators {
+  height: auto;
+  width: auto;
+}
+
+@media (max-width: 700px) {
+  .carousel-inner .carousel-caption p {
+    padding: 0 20px 0 20px;
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

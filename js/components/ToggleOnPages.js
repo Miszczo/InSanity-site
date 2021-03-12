@@ -15,7 +15,7 @@ class ToggleOnPages {
       loadingPage.classList.toggle('post-active');
       square.classList.toggle('post-active');
       welcomePage.style.display = 'none';
-      setTimeout(showContent, 3000);
+      setTimeout(showContent, 300);
     });
     const showContent = () => {  
       for (const page of addActiveClassToPages) {

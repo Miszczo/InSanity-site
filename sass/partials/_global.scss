@@ -47,10 +47,10 @@ body a:hover{
 /* hide/show elements*/ 
 
 .post {
-  display: none;
+  display: none !important;
 
   &.post-active {
-    display: flex;
+    display: flex !important;
   }
 }
 
