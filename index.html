@@ -43,11 +43,12 @@
       <div class="main-wrapper post">
         <div class="main-wrapper__home pages--config pages-selector post" id="home">
           <h1>Jesteśmy In Sanity!</h1>
-          <div class="content-wrapper">
-          <div class="home__images home-div">
-            <div id="player"></div>
-          </div>
-          </div>          
+          <div class="home__images home-div">      
+            <!-- iframe -->
+            <div class="video-container">
+              <iframe width="900" height="600" src="https://www.youtube.com/embed/j3Bc9lpDwuE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>          
+          </div>        
         </div>
         <!-- about section with carousel -->
         <div class="main-wrapper__about pages--config pages-selector post" id="about">
@@ -110,7 +111,7 @@
                       <div class="carousel-caption d-block">
                         <h3 class="d-none d-md-block">Michał #2</h3>
                         <h5 class="d-block d-md-none">Michał #2</h5>
-                        <p>Basista. Miłośnik kotów i ruskich pierogów. Twórca tej strony.</p>
+                        <p>Basista. Miłośnik kotów i ruskich pierogów.</p>
                       </div>              
                     </div>
                   </div>
@@ -126,31 +127,6 @@
               </div>
             </div>
           </div>  
-          <!-- mobile caption -->
-          <!-- <div class="d-block d-md-none in-sanity post-active">
-            <h3>In Sanity</h3>
-            <p>Powstaliśmy w 2012 roku, a od 2018 gramy w obecnym składzie. Przewiń dalej żeby poznać nas blizej!</p>
-          </div>      
-          <div class="post d-block d-md-none mobile-caption maciek">
-            <h3>Maciek</h3>
-            <p>Wokalista. Anielski głos zespołu o piekielnej sile rażenia. To on tworzy teksty, w zdecydowanej większości traktujące o miłości.</p>
-          </div>      
-          <div class="d-block d-md-none mobile-caption domino post">
-            <h3>Domino</h3>
-            <p>Gitarzysta. Fan ratowania życia, zimnego piwa i białych gitar. Domino jest wielofunkcyjny niczym szwajcarski scyzoryk - zagra pod nóżkę na weselu, ku uciesze wujka Zbyszka jak i metalowy koncert.</p>
-          </div>
-          <div class="d-block d-md-none mobile-caption bojan post">
-            <h3>Bojan</h3>
-            <p>Tak szybki jak wysoki... Oczywiście chodzi o grę! W zespole to on w głównej mierze odpowiedzialny jest za solówki!</p>
-          </div>
-          <div class="d-block d-md-none mobile-caption michal-drum post">
-            <h3>Michał</h3>
-            <p>Perkusista. Rytmiczne serce zespołu. Odpowiedzialny za bujanie głowami słuchaczy i podmuchy wiatru wydobywające się z centrali.</p>
-          </div>  
-          <div class="d-block d-md-none mobile-caption michal-bass post">
-            <h3>Michał #2</h3>
-            <p>Basista. Miłośnik kotów i ruskich pierogów. Twórca tej strony.</p>
-          </div>                     -->
         </div>
         <!-- media -->
         <div class="main-wrapper__media pages--config pages-selector post" id="media">
@@ -187,7 +163,7 @@
     </footer>
   </div>
   <!-- youtube iframe API -->
-  <script>
+  <!-- <script>
     // This code loads the IFrame Player API code asynchronously.
     const tag = document.createElement('script');
 
@@ -200,6 +176,15 @@
     let player;
     function onYouTubeIframeAPIReady() {
       player = new YT.Player('player', {
+        playerVars: {
+
+            enablejsapi: 1,
+            disablekb: 1,
+            showinfo: 0,
+            controls: 0,
+            fs: 0,
+            
+        },
         height: '100%',
         width: '100%',
         videoId: 'j3Bc9lpDwuE?',
@@ -225,7 +210,7 @@
         done = true;
       }
     }
-  </script>
+  </script> -->
   <script type="module" src="js/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

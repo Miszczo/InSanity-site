@@ -45,5 +45,8 @@
     "onchange": "^7.1.0",
     "stylelint": "^13.9.0",
     "stylelint-scss": "^3.18.0"
+  },
+  "dependencies": {
+    "@glidejs/glide": "^3.4.1"
   }
 }
