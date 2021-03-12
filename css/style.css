@@ -319,5 +319,11 @@ footer {
     padding: 0 20px 0 20px;
     font-size: 14px;
   }
+  .carousel-inner .carousel-caption {
+    background: rgba(0, 0, 0, 0.7);
+    position: relative;
+    left: 0;
+    top: 0;
+  }
 }
 /*# sourceMappingURL=style.css.map */
