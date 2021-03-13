@@ -107,7 +107,7 @@ header {
 }
 
 .band-logo__image {
-  max-width: 280px;
+  max-width: 300px;
   width: 100%;
   height: auto;
 }
@@ -129,7 +129,7 @@ header {
       align-items: center;
   list-style: none;
   height: 30px;
-  font-size: 15px;
+  font-size: 19px;
   width: 400px;
   margin: 0;
   border-bottom: 2px #BA0000 solid;

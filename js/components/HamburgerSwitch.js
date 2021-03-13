@@ -1,7 +1,7 @@
 const hamburgerSelector = document.querySelector('.hamburger-button-selector');
 const hiddenMenuSelector = document.querySelector('.hidden-menu');
 const socialMediaHEaderIcons = document.querySelector('.social-media__header-mobile');
-const headerButtonSelector = document.querySelectorAll('.header-mobile-button-selector');
+const headerButtonSelector = document.querySelectorAll('.hidden-header-button-selector');
 
 class HamburgerSwitch {
   constructor() {
