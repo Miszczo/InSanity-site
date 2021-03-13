@@ -186,6 +186,7 @@ header {
     -ms-flex-align: center;
         align-items: center;
     margin-left: 0px;
+    padding: 0 10px 0 10px;
   }
   .hidden-menu {
     display: block;
