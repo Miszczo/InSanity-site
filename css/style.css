@@ -209,6 +209,9 @@ header {
     margin: 0;
     margin-bottom: 15px;
   }
+  header {
+    height: 140px;
+  }
 }
 
 main {
