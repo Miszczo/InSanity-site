@@ -153,6 +153,10 @@ header {
   display: none;
 }
 
+.hidden-menu__list {
+  display: none;
+}
+
 @media (max-width: 760px) {
   .navigation {
     margin-top: 30px;
