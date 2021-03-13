@@ -19,7 +19,7 @@ class LoadingSquare {
         if (time >= 100) {
             clearInterval(counter);
         }
-      }, 30);
+      }, 20);
       
     });
   
