@@ -1,7 +1,9 @@
 header {
   height: 120px;
 }
-
+.hamburger-menu {
+  display: none;
+}
 .header-wrapper {
   display: flex;
   justify-content: space-around;
@@ -55,6 +57,9 @@ header {
 .social-media__header-mobile{
   display: none;
 }
+.hidden-menu {
+  display: none;
+}
 
 @media (max-width: 760px) {
   .navigation {
@@ -63,12 +68,40 @@ header {
  }
 
  @media (max-width: 500px) {
+  .navigation {
+    display: none;
+  }
   .social-media__header-mobile {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     width: 200px;
     margin-top: 20px;
+  }
+  .hamburger-menu {
+    display: flex;
+    margin-left: 30px;
+  }
+  .band-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 0px;
+  }
+
+  .hidden-menu {
+    display: block;
+  }
+  .hidden-menu__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    height: 30px;
+    font-size: 15px;
+    width: 400px;
+    margin: 0;
+    margin-bottom: 15px;
   }
  }
 
