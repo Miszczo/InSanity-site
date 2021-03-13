@@ -5,7 +5,6 @@
 
 /* variables */
 body {
-  height: 100vh;
   font-family: "Lato", sans-serif;
   background-image: url("https://i.postimg.cc/q7QcZ22h/close-up-white-marble-textured-background.jpg");
   background-repeat: no-repeat;
@@ -29,6 +28,18 @@ a:visited {
 body a:hover {
   color: #BB0001;
   text-decoration: none;
+}
+
+.pages--config {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 620px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 30px;
 }
 
 .button {
@@ -56,6 +67,12 @@ body a:hover {
 .img-responsive {
   width: 100%;
   height: auto;
+}
+
+@media (max-width: 760px) {
+  .pages--config {
+    height: 400px;
+  }
 }
 
 header {
@@ -109,7 +126,7 @@ header {
   list-style: none;
   height: 30px;
   font-size: 15px;
-  width: 500px;
+  width: 400px;
   margin: 0;
   border-bottom: 2px #BA0000 solid;
   border-bottom-left-radius: 100px 1px;
@@ -122,6 +139,29 @@ header {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin: 0 15px 0 15px;
+}
+
+.social-media__header-mobile {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .navigation {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 500px) {
+  .social-media__header-mobile {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 200px;
+    margin-top: 20px;
+  }
 }
 
 main {
@@ -206,18 +246,6 @@ main {
   z-index: 1;
 }
 
-.pages--config {
-  -ms-flex-direction: column;
-      flex-direction: column;
-  -ms-flex-align: center;
-      align-items: center;
-  height: 620px;
-  max-width: 1200px;
-  width: 100%;
-  margin-top: 40px;
-  padding: 30px;
-}
-
 .home-div {
   height: 80%;
   width: 80%;
@@ -229,6 +257,7 @@ main {
   padding-top: 30px;
   height: 0;
   overflow: hidden;
+  margin-top: 20px;
 }
 
 .video-container iframe, .video-container object, .video-container embed {
@@ -271,6 +300,12 @@ footer {
 
 .social-media__icon {
   font-size: 25px;
+}
+
+@media (max-width: 500px) {
+  .social-media {
+    display: none;
+  }
 }
 
 .wrapper {
@@ -320,12 +355,7 @@ footer {
   width: auto;
 }
 
-.carousel-indicators {
-  height: auto;
-  width: auto;
-}
-
-@media (max-width: 760px) {
+@media (max-width: 650px) {
   .carousel-inner .carousel-caption p {
     padding: 0 20px 0 20px;
     font-size: 12px;
@@ -335,6 +365,9 @@ footer {
     position: relative;
     left: 0;
     top: 0;
+  }
+  .carousel-caption {
+    height: 160px;
   }
 }
 /*# sourceMappingURL=style.css.map */

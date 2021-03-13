@@ -10,7 +10,7 @@ $font-text: 'Lato', sans-serif;
 
 
 body {
-  height: 100vh;
+  // height: 100vh;
   font-family: $font-text;
   background-image: url("https://i.postimg.cc/q7QcZ22h/close-up-white-marble-textured-background.jpg");
   background-repeat: no-repeat;
@@ -33,7 +33,17 @@ body a:hover{
   color: #BB0001;
   text-decoration: none;
 }
-
+// pages config
+.pages--config {
+  flex-direction: column;
+  align-items: center;
+  height: 620px;
+  max-width: 1200px;
+  width: 100%;
+  margin-top: 40px;
+  padding: 30px;
+  // border: 1px solid black;
+}
 .button {
   padding: 10px 30px;
   border: 2px solid black;
@@ -61,12 +71,7 @@ body a:hover{
 }
 
 @media (max-width: 760px) {
-  // body {
-  //   height: 50vh;
-  //   font-family: $font-text;
-  //   background-image: url("https://i.postimg.cc/q7QcZ22h/close-up-white-marble-textured-background.jpg");
-  //   background-repeat: no-repeat;
-  //   background-size: cover;
-  //   box-shadow: inset 0 0 0 2000px rgba(235, 232, 232, 0.2);
-  // }
+  .pages--config {
+    height: 400px;
+  }
  }

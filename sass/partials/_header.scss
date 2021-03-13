@@ -38,7 +38,7 @@ header {
   list-style: none;
   height: 30px;
   font-size: 15px;
-  width: 500px;
+  width: 400px;
   margin: 0;
   border-bottom: 2px #BA0000 solid;
   border-bottom-left-radius: 100px 1px;
@@ -52,12 +52,23 @@ header {
   font-weight: bold;
   margin: 0 15px 0 15px;
 }
-
+.social-media__header-mobile{
+  display: none;
+}
 
 @media (max-width: 760px) {
-
   .navigation {
-    
+    margin-top: 30px;
+  }
+ }
+
+ @media (max-width: 500px) {
+  .social-media__header-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 200px;
+    margin-top: 20px;
   }
  }
 
