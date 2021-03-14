@@ -63,6 +63,29 @@ body a:hover {
   display: flex !important;
 }
 
+.post-transition {
+  display: none !important;
+}
+
+.post-transition.post-active-transition {
+  display: -ms-flexbox !important;
+  display: flex !important;
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 /* img settings */
 .img-responsive {
   width: 100%;
@@ -190,27 +213,27 @@ header {
     -ms-flex-align: center;
         align-items: center;
     margin-left: 0px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 15px 10px;
   }
   .hidden-menu {
-    display: block;
+    background-color: rgba(0, 0, 0, 0.295);
   }
   .hidden-menu__list {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-direction: column;
         flex-direction: column;
-    -ms-flex-pack: justify;
-        justify-content: space-between;
+    -ms-flex-pack: start;
+        justify-content: flex-start;
+    -ms-flex-align: start;
+        align-items: flex-start;
     list-style: none;
-    height: 30px;
     font-size: 15px;
     width: 400px;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 7px 3px 7px 3px;
   }
   header {
-    height: 140px;
+    height: 150px;
   }
 }
 

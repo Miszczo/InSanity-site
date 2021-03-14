@@ -1,5 +1,6 @@
 header {
   height: 120px;
+  
 }
 .hamburger-menu {
   display: none;
@@ -11,6 +12,7 @@ header {
   height: auto;
   margin: 20px 0 10px 0;
   width: 100%;
+ 
 }
 
 /* logo */ 
@@ -54,12 +56,15 @@ header {
   font-weight: bold;
   margin: 0 15px 0 15px;
 }
+
 .social-media__header-mobile{
   display: none;
 }
+
 .hidden-menu {
   display: none;
 }
+
 .hidden-menu__list {
   display: none;
 }
@@ -90,25 +95,26 @@ header {
     justify-content: space-between;
     align-items: center;
     margin-left: 0px;
-    padding: 0 10px 0 10px;
+    padding: 0 10px 15px 10px;
+
   }
 
   .hidden-menu {
-    display: block;
+   background-color: rgba(0, 0, 0, 0.295);
   }
   .hidden-menu__list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: flex-start;
     list-style: none;
-    height: 30px;
     font-size: 15px;
     width: 400px;
-    margin: 0;
-    margin-bottom: 15px;
+    margin: 7px 3px 7px 3px;
   }
+
   header {
-    height: 140px;
+    height: 150px;
   }
  }
 

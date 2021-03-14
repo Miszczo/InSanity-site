@@ -58,10 +58,30 @@ body a:hover{
 
 .post {
   display: none !important;
-
   &.post-active {
     display: flex !important;
   }
+}
+
+// transition on/off classes
+.post-transition {
+  display: none !important;
+  &.post-active-transition {
+    display: flex !important;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+  }
+}
+@keyframes fadeInOpacity {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 /* img settings */ 

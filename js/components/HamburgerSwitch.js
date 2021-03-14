@@ -10,12 +10,12 @@ class HamburgerSwitch {
   }
 
   hamburgerToggle() {
- 
-    console.log(hamburgerSelector);
-    console.log(hiddenMenuSelector);
-    console.log(headerButtonSelector);
+    // console.log(hamburgerSelector);
+    // console.log(hiddenMenuSelector);
+    // console.log(headerButtonSelector);
+
     hamburgerSelector.addEventListener('click', () => {
-      hiddenMenuSelector.classList.toggle('post-active');
+      hiddenMenuSelector.classList.toggle('post-active-transition');
       socialMediaHEaderIcons.classList.toggle('post');
       console.log('click');
     });
@@ -24,7 +24,7 @@ class HamburgerSwitch {
   hideMenuAfterSectionChoose(){
     for(let button of headerButtonSelector){
       button.addEventListener('click', ()=> {
-        hiddenMenuSelector.classList.toggle('post-active');
+        hiddenMenuSelector.classList.toggle('post-active-transition');
         socialMediaHEaderIcons.classList.toggle('post');
         console.log('click');
       });
