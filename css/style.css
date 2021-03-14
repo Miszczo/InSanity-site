@@ -242,6 +242,7 @@ header {
   }
   .hidden-menu {
     background-color: rgba(0, 0, 0, 0.295);
+    border-radius: 5px;
   }
   .hidden-menu__list {
     display: -ms-flexbox;
@@ -256,6 +257,10 @@ header {
     font-size: 15px;
     width: 400px;
     margin: 7px 3px 7px 3px;
+  }
+  .band-logo:hover {
+    transform: scale(1);
+    transition: 0.2s;
   }
   header {
     height: 150px;
