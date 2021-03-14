@@ -28,6 +28,7 @@ a:visited {
 body a:hover {
   color: #BB0001;
   text-decoration: none;
+  transition: 0.2s;
 }
 
 .pages--config {
@@ -61,6 +62,20 @@ body a:hover {
 .post.post-active {
   display: -ms-flexbox !important;
   display: flex !important;
+  opacity: 1;
+  animation-name: fadeInOpacityMain;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 0.3s;
+}
+
+@keyframes fadeInOpacityMain {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .post-transition {
@@ -129,6 +144,11 @@ header {
   margin-left: 40px;
 }
 
+.band-logo:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
 .band-logo__image {
   max-width: 300px;
   width: 100%;
@@ -166,6 +186,11 @@ header {
   font-family: "Open Sans", sans-serif;
   font-weight: bold;
   margin: 0 15px 0 15px;
+}
+
+.navigation__item:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .social-media__header-mobile {
@@ -379,6 +404,11 @@ footer {
 
 .social-media__icon {
   font-size: 25px;
+}
+
+.social-media__icon:hover {
+  font-size: 28px;
+  transition: 0.1s;
 }
 
 @media (max-width: 500px) {

@@ -32,6 +32,7 @@ a:visited{
 body a:hover{
   color: #BB0001;
   text-decoration: none;
+  transition: 0.2s;
 }
 // pages config
 .pages--config {
@@ -60,7 +61,20 @@ body a:hover{
   display: none !important;
   &.post-active {
     display: flex !important;
+    opacity: 1;
+    animation-name: fadeInOpacityMain;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
   }
+}
+@keyframes fadeInOpacityMain {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
 }
 
 // transition on/off classes

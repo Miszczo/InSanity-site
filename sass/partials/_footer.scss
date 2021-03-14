@@ -16,6 +16,10 @@ footer {
   // margin: 0 20px 0 40px;
   font-size: 25px;
 }
+.social-media__icon:hover {
+  font-size: 28px;
+  transition: 0.1s;
+}
 @media (max-width: 500px) {
   .social-media{
     display: none;

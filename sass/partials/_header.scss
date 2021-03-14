@@ -22,6 +22,10 @@ header {
   align-items: center;
   margin-left: 40px;
 }
+.band-logo:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+}
 
 .band-logo__image {
   max-width: 300px;
@@ -55,6 +59,10 @@ header {
   font-family: $font-titles;
   font-weight: bold;
   margin: 0 15px 0 15px;
+}
+.navigation__item:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
 }
 
 .social-media__header-mobile{
