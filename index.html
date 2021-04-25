@@ -189,55 +189,7 @@
       </div>     
     </footer>
   </div>
-  <!-- youtube iframe API -->
-  <!-- <script>
-    // This code loads the IFrame Player API code asynchronously.
-    const tag = document.createElement('script');
 
-    tag.src = "https://www.youtube.com/iframe_api";
-    const firstScriptTag = document.getElementsByTagName('script')[0];
-    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
-
-    // This function creates an <iframe> (and YouTube player)
-    //    after the API code downloads.
-    let player;
-    function onYouTubeIframeAPIReady() {
-      player = new YT.Player('player', {
-        playerVars: {
-
-            enablejsapi: 1,
-            disablekb: 1,
-            showinfo: 0,
-            controls: 0,
-            fs: 0,
-            
-        },
-        height: '100%',
-        width: '100%',
-        videoId: 'j3Bc9lpDwuE?',
-        playerVars: { 'autoplay': 1, 'controls': 1, 'showinfo': 0, },
-        events: {
-          'onReady': onPlayerReady,
-          'onStateChange': onPlayerStateChange
-        }
-      });
-    }
-    function onPlayerReady() {
-      const welcomeButton = document.querySelector('.welcome-page__button');
-      welcomeButton.addEventListener('click', () => {
-        console.log('click');
-        player.playVideo();
-      });
-      // e.target.playVideo();
-    }
-
-    let done = false;
-    function onPlayerStateChange(event) {
-      if (event.data == YT.PlayerState.PLAYING && !done) {
-        done = true;
-      }
-    }
-  </script> -->
   <script type="module" src="js/app.js"></script>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
